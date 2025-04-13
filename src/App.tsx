@@ -7,7 +7,7 @@ const ROWS = 15;
 const COLS = 16;
 
 /* tile set and sprite files
-   (all PNGs are 16 × 16; React/Vite will copy them from /public)          */
+   (all PNGs are 16 × 16; React/Vite will copy them from /public )          */
 const TILE_TYPES = [
   '.', 'w', 'h', 'p', 'k', 'd', '<', '^', '>', 'v', 'c', 'r',
 ];
@@ -15,18 +15,18 @@ const TILE_TYPES = [
 /* map every tile char → image URL (null = blank floor) */
 const TILE_SPRITES = {
   '.': null,            // floor stays blank
-  w: '/w.png',
-  h: '/h.png',
-  p: '/p.png',
-  k: '/k.png',
-  d: '/d.png',
-  '<': '/left.png',
-  '^': '/up.png',
-  '>': '/right.png',
-  v: '/down.png',       // conveyor down
-  V: '/down.png',       // (alias, in case you use uppercase)
-  c: '/c.png',
-  r: '/r.png',
+  w: '/sprites/w.png',
+  h: '/sprites/h.png',
+  p: '/sprites/p.png',
+  k: '/sprites/k.png',
+  d: '/sprites/d.png',
+  '<': '/sprites/left.png',
+  '^': '/sprites/up.png',
+  '>': '/sprites/right.png',
+  v: '/sprites/down.png',       // conveyor down
+  V: '/sprites/down.png',       // (alias, in case you use uppercase)
+  c: '/sprites/c.png',
+  r: '/sprites/r.png',
 };
 
 /* fallback colours if an image is missing (optional) */
